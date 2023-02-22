@@ -5,6 +5,11 @@
 Projeto em desenvolvimento focado nas habilidades Full Stack, utilização no Front-end biblioteca ReactJs, 
 Hooks useStates, Cliente HTTP Axios para o navegador NodeJs, back-end NodeJs
 <br>
+
+🚀 Projeto 
+<br>
+
+<img src="https://user-images.githubusercontent.com/97356148/220453569-670785d6-a1f7-4938-851d-420e354abe5d.svg" width="1040px">   
 <br>
 
 ###   📚Utilização
