@@ -2,37 +2,93 @@
 
 ### 📑Explicação
 
-Projeto em desenvolvimento focado nas habilidades Full Stack, utilização no Front-end biblioteca ReactJs, 
-Hooks useStates, Cliente HTTP Axios para o navegador NodeJs, back-end NodeJs
+Projeto focado nas habilidades Full Stack , desenvolvimento de sistema Web FullStack, projeto do curso DevClub, contém diversos sistemas de software diferentes em um só projeto, para o sistema web ser completo e funcional. O projeto contém uma página de Login e cadastro para entrar no sistema, página de cadastro. página de admin,
+requerimento verifica se o email e senha são cadastrados e se são validos, caso validos e cadastrados são direcionados para um sistema web com produtos, podendo escolher quantidades, são calculado os preços. Utilização de banco de dados Postgres, express, docker e entre outros.
+
+⚔️Ferramentas de Software usadas:
+
+<aside>
+✅ MVC ⇒ Arquitetura de Software
+
+</aside>
 <br>
+
+<aside>
+✅ Docker ⇒ Containers
+
+</aside>
+<br>
+<br>
+
+
+⚔️ Utilização de ferramentas no back-end /🐳 ***docker***:
+
+```
+docker run --name 
+```
+<br>
+
+⚔️ Utilização de ferramentas no back-end / ***Sequelize***:
+
+```
+yarn add sequelize
+```
+
+```
+yarn add sequelize-cli -D
+```
+<br>
+
+⚔️ Utilização de ferramentas no back-end / ***Postgres***:
+
+```
+yarn add pg pg-hstore
+```
+<br>
+
+⚔️ Utilização de ferramentas no back-end / ***Sequelize/ Migration*** :
+
+```
+yarn sequelize migration:create --name=create-users
+```
+<br>
+
+⚔️ Utilização de ferramentas no back-end / ***V4 uuid***:
+
+```
+yarn add uuid
+```
+<br>
+
+⚔️ Utilização de ferramentas no back-end / ***YUP***:
+
+```
+yarn add yup
+```
+<br>
+
+⚔️ Utilização de ferramentas no back-end / ***bcrypt***:
+
+Bcrypt serve para auxiliar a encriptar as senhas do usuario para mandar para o banco de dados
+
+```
+yarn add bcrypt
+```
+
+<br>
+
+⚔️ Utilização de ferramentas no back-end / ***multer***:
+
+```
+yarn add multer
+```
+<br>
+
 
 🚀 Projeto 
 <br>
 
-<img src="https://user-images.githubusercontent.com/97356148/220453569-670785d6-a1f7-4938-851d-420e354abe5d.svg" width="1040px">   
-<br>
-
-###   📚Utilização
-
- <img src="https://user-images.githubusercontent.com/97356148/205089799-826af21f-a1e4-4bbe-aadf-9286d61de8e5.png" width="29px">
-
-```jsx
-$ npx create-react-app 
-```
-
-<img src="https://user-images.githubusercontent.com/97356148/205091241-9735cbe0-17b9-4a35-8bff-0ca8e6bc0c5d.png" width="50px">
-
-```jsx
-$ yarn 
-```
-<br>
-
-<img src="https://user-images.githubusercontent.com/97356148/206260034-f9e75cdd-cb1d-41fe-9606-9e543e6fb96c.svg" width="50px">
-
-```jsx
-$ yarn add axios
-```
-<br>
+<img src="https://user-images.githubusercontent.com/97356148/221013692-00897a1e-05f8-4d21-b022-4a7aca8bf709.svg" width="1040px">
 
 <br>
 
