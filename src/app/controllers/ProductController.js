@@ -18,16 +18,23 @@ class ProductController {
     const { filename: path } = request.file;
     const { name, price, category } = request.body;
 
-
     const product = await Product.create({
       name,
       price,
       category,
       path,
-    })
+    });
 
     return response.json(product);
   }
+
+  async index(request, response) {
+    const products = await Product.findAll()
+  
+    return response.json(products)
+  }
 }
+
+ 
 
 export default new ProductController();
