@@ -1,4 +1,4 @@
-## ProjectDevClub-CodeBurguer 🥪
+## ProjectDevClub-CodeBurguer
 
 ### 📑Explicação
 
