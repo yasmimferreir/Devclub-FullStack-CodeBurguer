@@ -6,6 +6,7 @@ import Sessioncontroller from "./app/controllers/Sessioncontroller";
 import UserController from "./app/controllers/UserController";
 import authMiddleware from "./app/middlewares/auth";
 import CategoryController from "./app/controllers/CategoryController";
+import OrderController from "./app/controllers/OrderController";
 
 const upload = multer(multerConfig);
 
@@ -21,5 +22,8 @@ routes.get("/products", ProductController.index);
 
 routes.post("/categories", CategoryController.store);
 routes.get("/categories", CategoryController.index);
+
+
+routes.post("/orders", OrderController.store);
 
 export default routes;
