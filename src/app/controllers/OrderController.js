@@ -1,7 +1,7 @@
 import * as Yup from "yup";
 import Category from "../models/Category";
 import Product from "../models/Product";
-import Order  from "../schemas/Order";
+import Order from "../schemas/Order";
 
 class OrderController {
   async store(request, response) {
@@ -17,6 +17,7 @@ class OrderController {
     });
 
     console.log(request);
+
     try {
       await schema.validateSync(request.body, { abortEarly: false });
     } catch (err) {
@@ -61,7 +62,7 @@ class OrderController {
         name: request.userName,
       },
       products: editedProduct,
-      status: 'Pedido realizado',
+      status: "Pedido realizado",
     };
 
     const orderResponse = await Order.create(order);

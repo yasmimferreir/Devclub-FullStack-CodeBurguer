@@ -17,8 +17,7 @@ class Database {
     this.connection = new Sequelize(configDatabase);
     models
       .map((model) => model.init(this.connection))
-      .map(
-        (model) => model.associate && model.associate(this.connection.models)
+      .map((model) => model.associate && model.associate(this.connection.models)
       );
   }
 
@@ -26,7 +25,7 @@ class Database {
     this.mongoConnection = mongoose.connect(
       "mongodb://localhost:27017/codeburguer",
       {
-       // userNewUrlParser: true,
+       //userNewUrlParser: true,
         useUnifiedTopology: true,
       }
     );
