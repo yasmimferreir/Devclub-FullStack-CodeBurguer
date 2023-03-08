@@ -85,6 +85,20 @@ yarn add multer
 <br>
 
 
+⚔️Ferramenta usada back-end ***TOKEN***:
+
+```
+yarn add jsonwebtoken
+```
+
+⚔️Ferramenta usada Back-end ***Mongo***:
+
+```
+yarn add mongoose
+```
+
+<br>
+
 🚀 Projeto 
 <br>
 
