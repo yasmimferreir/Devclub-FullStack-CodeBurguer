@@ -69,6 +69,7 @@ class OrderController {
 
     return response.status(201).json(orderResponse);
   }
+
 }
 
 export default new OrderController();

@@ -29,7 +29,8 @@ class ProductController {
     return response.json(product);
   }
 
-  async index(request, response) {
+
+  async index( request, response) {
     const products = await Product.findAll({
       include: [
         {
@@ -39,7 +40,6 @@ class ProductController {
         },
       ],
     });
-
     return response.json(products);
   }
 }
