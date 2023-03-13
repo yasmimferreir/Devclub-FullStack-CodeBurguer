@@ -20,11 +20,12 @@ class OrderController {
 
     try {
       await schema.validateSync(request.body, { abortEarly: false });
+
     } catch (err) {
       return response.status(400).json({ error: err.errors });
     }
 
-    const productsId = request.body.products.map((product) => product.id);
+     const productsId = request.body.products.map((product) => product.id);
 
     const updatedProducts = await Product.findAll({
       where: {
@@ -41,7 +42,7 @@ class OrderController {
 
     const editedProduct = updatedProducts.map((product) => {
       const productIndex = request.body.products.findIndex(
-        (requestProduct) => requestProduct.id == product.id
+        (requestProduct) => requestProduct.id === product.id
       );
 
       const newProduct = {
@@ -69,7 +70,6 @@ class OrderController {
 
     return response.status(201).json(orderResponse);
   }
-
 }
 
 export default new OrderController();

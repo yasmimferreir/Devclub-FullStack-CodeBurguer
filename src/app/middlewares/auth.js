@@ -8,7 +8,7 @@ export default (request, response, next) => {
     return response.status(401).json({ error: "Token invalidad" });
   }
 
-  const token = authToken.split(" ")[1];
+  const token = authToken.split(" ") [1];
 
   try {
     jwt.verify(token, authConfig.secret, function (err, decoded) {
