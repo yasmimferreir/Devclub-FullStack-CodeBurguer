@@ -8,19 +8,15 @@ class OrderController {
     const schema = Yup.object().shape({
       products: Yup.array()
         .required()
-        .of(
-          Yup.object().shape({
+        .of( Yup.object().shape({
             id: Yup.number().required(),
-            quantity: Yup.number().required(),
-          })
-        ),
+            quantity: Yup.number().required(),})),
     });
 
     console.log(request);
 
     try {
       await schema.validateSync(request.body, { abortEarly: false });
-
     } catch (err) {
       return response.status(400).json({ error: err.errors });
     }
